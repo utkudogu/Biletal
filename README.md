@@ -1,7 +1,8 @@
 # Biletal React Front-End
 ---
-Vercel linki:[vercel](link)
-LocalHost linki:[local](link)
+Vercel linki:[vercel](https://frontend-omega-sand.vercel.app/Profil)
+
+LocalHost linki:[local](http://localhost:3001/)
 
 
 'Uygulamayı çalıştırmak için:'
