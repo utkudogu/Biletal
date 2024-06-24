@@ -15,7 +15,7 @@ Uygulamayı çalıştırmak için:
 
 ## Bileşenler:
 ---
-_1.Navbar:  Navigasyon Çubuğu
+1.Navbar:  Navigasyon Çubuğu
 
 2.Main Content: Ana İçerik
 
