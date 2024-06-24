@@ -5,7 +5,7 @@ Vercel linki:[vercel](https://frontend-omega-sand.vercel.app/Profil)
 LocalHost linki:[local](http://localhost:3001/)
 
 
-'Uygulamayı çalıştırmak için:'
+Uygulamayı çalıştırmak için:
 
 >- npm install
 >- npm start
@@ -16,9 +16,13 @@ LocalHost linki:[local](http://localhost:3001/)
 ## Bileşenler:
 ---
 1.Navbar: Navigasyon Çubuğu
+
 2.Main Content: Ana İçerik
+
 3.Header: Başlık
+
 4.Footer: Alt bilgi
+
 5.Home: Anasayfa
 6.Template: Her sayfada Navbarın görünmesini sağlayan kapsayıcı bileşen
 7.Login: Giriş yapmayı sağlayan bileşen
