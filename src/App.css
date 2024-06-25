@@ -1,0 +1,1309 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+/* Navbar Css Başlangıç */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 80px;
+  background: white;
+}
+.rightSide a {
+  margin-right: 25px;
+  color: red;
+  text-decoration: none;
+  font-size: 18px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 250ms;
+  position: relative;
+  font-weight: 1000;
+  z-index: 1;
+}
+.rightSide a:before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: blue (16, 16, 0, 0.904);
+  transition: all 250ms;
+}
+.rightSide a:hover:before {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .leftSide img {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+  }
+  .rightSide a{
+    margin-right: 4px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 360px) {
+  .leftSide img {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+  }
+  .rightSide a{
+    margin-right: 4px;
+    font-size: 13px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px;
+  }
+}
+
+/* Navbar Css Bitiş */
+/* Home Css Başlangıç */
+.home {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerContainer {
+  width: auto;
+  margin-left: 50px;
+  margin-top: -150px;
+}
+
+.headerContainer h1 {
+  font-size: 90px;
+  height: 60px;
+  font-weight: 50;
+  color: white;
+}
+
+.headerContainer p {
+  font-size: 40px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.headerContainer button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+  height: 50px;
+  width: 180px;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.headerContainer button:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color: #83E85A;
+  transition: .3s;
+  z-index: -1;
+}
+.headerContainer button:hover:before{
+  width: 100%;  
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .headerContainer button {
+    background-color: white;
+    color: #121619;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer button:hover {
+    background-color: rgb(225, 225, 225);
+    color: #121619;
+  }
+}
+/* Home Css Bitiş */
+/* Footer Css Başlangıç */
+.footer {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.socialMedia svg {
+  color: black;
+  margin: 20px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: black;
+  text-align: center;
+}
+/* footer bitiş */
+/* menu baslayıs */
+.menu{
+  width: 100%;
+  text-align: center;
+  background-color:white;
+  padding: 20px;
+  height: 130vh;
+}
+.menuTitle{
+  font-size: 35px;
+}
+.menuList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.menuItem{
+  background-color:white;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+.menuItem:hover{
+  transform: scale(1.02);
+  opacity: .9;
+}
+.menuItem img{
+  width: 340px;
+  height: 250px;
+}
+.menuItem h3{
+  font-size: 25px;
+  color: black;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.menuItem p{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@media (max-width:600px) {
+  .menu{
+    padding: 5px;
+  }
+  .menuItem{
+    width: 180px;
+    height: 180px;
+  }
+  .menuItem img{
+    width: 160px;
+    height: 80px;
+  }
+}
+@media (max-width:400px) {
+  .menu{
+    padding: 2px;
+  }
+  .menuItem{
+    width: 150px;
+    height: 150px;
+  }
+  .menuItem img{
+    width: 130px;
+    height: 50px;
+  }
+}
+
+/* menü bitiş */
+/* about başlayış */
+.GirisYap {
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+}
+
+.aboutTop {
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.aboutBottom p {
+  margin-top: 20px;
+  width: 500px;
+}
+
+.about .aboutBottom h1 {
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+}
+@media (max-width:600px) {
+  .aboutBottom p {
+    margin-top: 20px;
+    width: 300px;
+  }
+  
+}
+/* about bitiş */
+/* contact başlangıç */
+.contact {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+}
+
+.contact .leftSide {
+  height: 100%;
+  flex: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .rightSide {
+  height: 100%;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .rightSide h1 {
+  font-weight: 10;
+  font-size: 50px;
+  margin-left: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+form input {
+  height: 40px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+
+form textarea {
+  margin-top: 15px;
+  height: 70px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+input::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  color: black;
+}
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form label {
+  margin-top: 15px;
+  color: grey;
+}
+
+form button {
+  margin-top: 40px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #121619;
+  color: whitesmoke;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("assets/background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  backdrop-filter: blur(15px) brightness(80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+/* animations: start */
+input:focus~label,
+input:valid~label {
+  top: -5px;
+}
+
+/* animation:end */
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+.forget {
+  margin: -10px 0 17px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forget label input {
+  margin-right: 3px;
+}
+
+.forget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .form-box {
+      width: 100%;
+      border-radius: 0px;
+  }
+}
+
+
+/* kaydolma sayfası */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    background: #3aaf9f;
+}
+
+.wrapper{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 60px 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+.wrapper .title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: #3aaf9f;
+}
+.wrapper .social_media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.wrapper .social_media .item{
+    width: 35px;
+    height: 35px;
+    border: 2px solid #eeeeee;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #eeeeee;
+    transition: all 0.5s ease;
+}
+.wrapper .social_media .item:hover{
+    border-color: #3aaf9f;
+    color: #3aaf9f;
+}
+.wrapper .form .input_field{
+    position: relative;
+    margin-bottom: 10px;
+}
+.wrapper .form .input_field .input{
+    width: 100%;
+    padding: 12px;
+    padding-left: 30px;
+    border: none;
+    background: #eeeeee;
+}
+.wrapper .form .btn{
+    width: 70%;
+    margin: 20px auto 0;
+    background: #3aaf9f;
+    padding: 12px;
+    text-align: center;
+    border-radius: 25px;
+}
+.wrapper .form .btn a{
+    color: #fff;
+}
+.wrapper .form .input_field i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #1d2120;
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder{
+    color: #848484;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div, h2, h3, h6, form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.booking-form-w3layouts {
+  box-sizing: border-box;
+  padding: 3em;
+  background: rgba(0, 0, 0, 0.78);
+  width: 65%;
+  margin: 0 auto;
+}
+
+h2.sub-heading-agileits,
+h3.sub-heading-agileits {
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 0.4em;
+  padding: 0px 25px 10px 0px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #0091cd;
+  font-family: 'Raleway', sans-serif;
+}
+
+.radio-section {
+  text-align: left;
+  margin: 0.7em 0;
+}
+
+.radio-section h6 {
+  display: inline;
+  margin-top: 10px;
+  color: #0091cd;
+  font-size: 19px;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.radio-section ul {
+  display: inline;
+}
+
+.radio-buttons-w3-agileits li input[type="radio"] {
+  cursor: pointer;
+}
+
+.radio-buttons-w3-agileits li label {
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.booking-form-w3layouts input[type="text"],
+.booking-form-w3layouts input[type="email"],
+.booking-form-w3layouts textarea,
+select.form-control,
+input#datepicker {
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  padding: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.booking-form-w3layouts textarea {
+  resize: none;
+  height: 80px;
+}
+
+.field-agileinfo-spc {
+  margin-bottom: 1em;
+}
+
+.form-w3-agile-text {
+  width: 100%;
+}
+
+select.form-control option {
+  background: #000;
+}
+
+.booking-form-w3layouts input[type="submit"],
+.booking-form-w3layouts input[type="reset"] {
+  text-transform: capitalize;
+  background: #0091cd;
+  color: #fff;
+  padding: 0.5em 4em;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-top: 1em;
+  float: left;
+  outline: none;
+  letter-spacing: 1px;
+  transition: 0.5s all;
+}
+.booking-form-w3layouts input[type="submit"] {
+  margin-right: 1.5em;
+  background: #d2741c;
+}
+
+.booking-form-w3layouts input[type="submit"]:hover {
+  background: #0091cd;
+  color: #fff;
+}
+
+.booking-form-w3layouts input[type="reset"]:hover {
+  background: #d2741c;
+  color: #fff;
+}
+
+.booking-form-w3layouts ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.booking-form-w3layouts :-moz-placeholder {
+  color: #fff;
+}
+
+.booking-form-w3layouts ::-moz-placeholder {
+  color: #fff;
+}
+
+.booking-form-w3layouts :-ms-input-placeholder {
+  color: #fff;
+}
+
+.booking-form-w3layouts label {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.83);
+  letter-spacing: 2px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+ul.radio-buttons-w3-agileits li {
+  display: inline-block;
+  margin: 0em 2em;
+}
+
+@media (max-width: 1440px) {
+  .booking-form-w3layouts {
+    width: 73%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .booking-form-w3layouts {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .booking-form-w3layouts {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .booking-form-w3layouts {
+    width: 83%;
+    padding: 2em 2.2em;
+  }
+}
+
+@media (max-width: 1024px) {
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 22px;
+    padding: 0px 20px 7px 0px;
+  }
+  .field-agileinfo-spc {
+    margin-bottom: 0.8em;
+  }
+  .booking-form-w3layouts input[type="submit"],
+  .booking-form-w3layouts input[type="reset"] {
+    padding: 0.5em 3em;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 21px;
+    padding: 0px 15px 7px 0px;
+  }
+  .radio-section h6 {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+  ul.radio-buttons-w3-agileits li {
+    margin: 0em 1em;
+  }
+}
+
+@media (max-width: 667px) {
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 19px;
+    letter-spacing: 1.5px;
+  }
+  .booking-form-w3layouts {
+    width: 86%;
+    padding: 2em 2em;
+  }
+  .booking-form-w3layouts input[type="text"],
+  .booking-form-w3layouts input[type="email"],
+  .booking-form-w3layouts textarea,
+  select.form-control,
+  input#datepicker {
+    padding: 8px 10px;
+  }
+  .field-agileinfo-spc {
+    margin-bottom: 0.9em;
+  }
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    margin-bottom: 0.6em;
+  }
+}
+
+@media (max-width: 640px) {
+  .booking-form-w3layouts input[type="submit"] {
+    margin-right: 0.7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-form-w3layouts {
+    width: 90%;
+  }
+  .booking-form-w3layouts input[type="submit"],
+  .booking-form-w3layouts input[type="reset"] {
+    padding: 0.5em 2em;
+  }
+}
+
+@media (min-width: 481px) {
+  .main-flex-w3ls-sectns {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .form-w3-agile-text1,
+  .form-w3-agile-text2 {
+    flex-basis: 48.5%;
+    -webkit-flex-basis: 48.5%;
+  }
+}
+
+@media (min-width: 737px) {
+  .triple-wthree {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .form-w3-agile-text11,
+  .form-w3-agile-text22,
+  .form-w3-agile-text33 {
+    flex-basis: 32%;
+    -webkit-flex-basis: 32%;
+  }
+}
+
+@media (max-width: 480px) {
+  ul.radio-buttons-w3-agileits li {
+    margin: 0em 0.5em;
+  }
+  .radio-section {
+    margin: 1.3em 0 .7em;
+  }
+  .booking-form-w3layouts {
+    width: 85%;
+  }
+  ul.radio-buttons-w3-agileits li {
+    margin: 1em 0em 0em 0.2em;
+    display: block;
+  }
+  .booking-form-w3layouts input[type="submit"],
+  .booking-form-w3layouts input[type="reset"] {
+    font-size: 1em;
+  }
+  .booking-form-w3layouts textarea {
+    height: 60px;
+  }
+  .radio-section {
+    margin: 1em 0 .7em;
+  }
+}
+
+@media (max-width: 414px) {
+  .booking-form-w3layouts {
+    width: 90%;
+  }
+  .booking-form-w3layouts {
+    width: 90%;
+    padding: 1.5em 1.7em;
+  }
+}
+
+@media (max-width: 384px) {
+  .booking-form-w3layouts input[type="submit"],
+  .booking-form-w3layouts input[type="reset"] {
+    float: none;
+  }
+  .booking-form-w3layouts input[type="submit"] {
+    margin-right: 0em;
+  }
+}
+
+@media (max-width: 320px) {
+  .booking-form-w3layouts {
+    width: 93%;
+    padding: 1.3em 1.5em;
+  }
+  h2.sub-heading-agileits,
+  h3.sub-heading-agileits {
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    padding: 0px 12px 5px 0px;
+  }
+}
+
+
+
+
+/* kampanyalar */
+
+
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Sabit yükseklik */
+  object-fit: cover; /* Görüntünün oranını koruyarak alanı doldur */
+  display: block; /* Görüntü etrafında boşluk oluşmasını engeller */
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+/* popüler rotalar */
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: rgba(240, 240, 240, 0.9); /* Şeffaf header arka plan rengi */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Kartların dikey boyutlarını eşitlemek için */
+  max-width: 1200px;
+  margin: 20px auto; /* Üst ve alt boşluk ekledik */
+  padding: 20px;
+  gap: 20px; /* Kartlar arasında boşluk */
+}
+
+.card {
+  flex: 1; /* Eşit genişlik için */
+  background-color: rgba(255, 255, 255, 0.9); /* Şeffaf kart arka planı */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Sabit yükseklik */
+  object-fit: cover; /* Görüntünün oranını koruyarak alanı doldur */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* otel */
+
+
+
+body,html{
+  height: 100%;
+  margin: 0;
+  font-family: 'poppins',sans-serif;
+}
+.background{
+  background-image: url('assets/otel.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.booking-form{
+  background-color: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+.booking-form h2{
+  text-align: center;
+}
+.booking-form form{
+  display: flex;
+  flex-direction: column;
+}
+.booking-form input{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.booking-form button{
+  margin-top:10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.booking-form button:hover{
+  background-color: #45a049;
+}
+
+
+
+
+/* araç */
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Arka planı biraz şeffaf yapalım */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.rental-form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Form arka planını biraz şeffaf yapalım */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+#rental-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
